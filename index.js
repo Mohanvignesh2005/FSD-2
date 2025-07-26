@@ -19,9 +19,9 @@ const server = http.createServer((req, res) => {
             </ul>
         `);
     } 
-    else if (url === '/profile') {
+    else if (url === '/index') {
         // Serve profile.html
-        const filePath = path.join(__dirname, 'profile.html');
+        const filePath = path.join(__dirname, 'index.html');
         fs.readFile(filePath, (err, content) => {
             if (err) {
                 res.writeHead(500, { 'Content-Type': 'text/plain' });
