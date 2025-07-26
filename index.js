@@ -4,7 +4,7 @@ const path = require('path');
 // Create server
 const server = http.createServer((req, res) => {
     const { url, method } = req;
-    if (url === '/' || url === '/index') {
+    if (url === '/') {
         // Home page with navigation links
         res.writeHead(200, { 'Content-Type': 'text/html' });
         res.end(`
